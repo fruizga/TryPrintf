@@ -19,5 +19,6 @@ int _putchar(char c);
 int CharacterCase(va_list arg);
 int StringCase(va_list arg);
 int DecimalCase(va_list arg);
+int IntegerCase(va_list arg);
 
 #endif
