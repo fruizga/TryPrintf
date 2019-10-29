@@ -18,6 +18,11 @@ int OctCase(va_list arg)
 	}
 	cnt++;
 	MyArr = malloc(cnt * sizeof(int));
+	if (MyArr == NULL)
+	{
+		free(MyArr);
+		return (0);
+	}
 	for (i = 0; i < cnt; i++)
 	{
 		MyArr[i] = Aux % 8;
