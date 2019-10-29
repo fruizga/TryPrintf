@@ -16,6 +16,7 @@ int _printf(const char *format, ...)
 		{"s", StringCase},
 		{"d", DecimalCase},
 		{"i", IntegerCase},
+		{"o", OctCase},
 		{NULL, NULL}
 	};
 	va_start(arg, format);

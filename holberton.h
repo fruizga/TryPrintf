@@ -21,4 +21,6 @@ int StringCase(va_list arg);
 int DecimalCase(va_list arg);
 int IntegerCase(va_list arg);
 
+int OctCase(va_list arg);
+
 #endif
