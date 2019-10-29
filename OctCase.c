@@ -9,7 +9,7 @@
 int OctCase(va_list arg)
 {
 	unsigned int n = va_arg(arg, unsigned int), Aux = n;
-	int cnt = 0, i, *arr;
+	int cnt = 0, i, *MyArr;
 
 	while (n / 8 != 0)
 	{
@@ -17,16 +17,16 @@ int OctCase(va_list arg)
 		cnt++;
 	}
 	cnt++;
-	arr = malloc(cnt * sizeof(int));
+	MyArr = malloc(cnt * sizeof(int));
 	for (i = 0; i < cnt; i++)
 	{
-		arr[i] = Aux % 8;
+		MyArr[i] = Aux % 8;
 		Aux = Aux / 8;
 	}
 	for (i = cnt - 1; i >= 0; i--)
 	{
-		_putchar(arr[i] + '0');
+		_putchar(MyArr[i] + '0');
 	}
-	free(arr);
+	free(MyArr);
 	return (cnt);
 }
